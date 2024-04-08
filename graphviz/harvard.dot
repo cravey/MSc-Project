@@ -1,0 +1,11 @@
+digraph HarvardArchitecture {
+    rankdir=LR;
+    node [shape=box];
+    
+    CPU [label="CPU"];
+    InstructionMemory [label="Instruction Memory"];
+    DataMemory [label="Data Memory"];
+    
+    CPU -> InstructionMemory [label="Instruction Bus\nReads", color="blue"];
+    CPU -> DataMemory [label="Data Bus\nReads/Writes", color="red"];
+}
