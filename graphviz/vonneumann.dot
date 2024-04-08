@@ -1,0 +1,9 @@
+digraph vonNeumannArchitecture {
+    rankdir=LR;
+    node [shape=box];
+    
+    CPU [label="CPU"];
+    Memory [label="Memory"];
+    
+    CPU -> Memory [label="Bus\nReads/Writes", dir=both, color="black"];
+}
